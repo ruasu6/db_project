@@ -1,0 +1,59 @@
+.container-fluid{
+    flex-direction:column;
+    align-content:center;
+    justify-content: center;
+}
+.background{
+    flex-direction:column;
+    align-content:center;
+    width: calc(100% - 160px);
+}
+#bg{
+    padding: 10px 0px 10px 0px;
+}    
+#sg{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+#bt{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+.pb-2{
+    font-size: 32px;
+}
+.text-gray-dark{
+    font-size: 20px;
+    margin-top:15px ;
+}
+.media-body{
+    margin: 0 0 0 25px;
+}
+.d-block{
+    font-size: 15px;
+}
+img {
+    border-radius: 50%;
+}
+.btn-sm{
+    margin: 30px 20px 0 0;
+}
+#bt{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#test{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1369px) {
+    #c{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}

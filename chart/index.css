@@ -1,0 +1,58 @@
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#award{
+    padding-left: 20px;
+    position: relative;
+    color: #4e73df;
+    font-weight: bold;
+    top: -13px;
+}
+
+.videolist{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.videoArea{
+    padding: 0 40px
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top:10px
+}
+
+.watchTitle{
+    position: relative;
+    /* right: 430px; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.order{
+    font-size: 130px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px #3a3b45;
+    position: relative;
+    top: 109px;
+    left: 35px;
+    
+}

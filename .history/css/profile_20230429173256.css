@@ -1,0 +1,222 @@
+#content{
+    flex-direction:column;
+    align-items:center;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+    transition: 0.3s cubic-bezier(0.75, 0, 0.2, 1), color 0.3s ease;
+  }
+  .rela-block {
+    /* display: flex;
+    flex-wrap:wrap; */
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+  }
+  .rela-inline {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+
+  }
+  .floated {
+    display: inline-block;
+    position: relative;
+    margin: false;
+    float: left;
+  }
+  .floated.right {
+    float: right;
+  }
+  
+  
+  /* body {
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #f4f4f4;
+  } */
+  
+  
+  /* .containerp {
+    z-index: 1;
+    width: 92%;
+    max-width: 1126px;
+    background-color: #f4f4f4;
+    margin: 70px auto;
+    padding: 70px 0;
+  } */
+  .profile-card {
+    width: calc(100% - 160px);
+    padding-top: 100px;
+    margin: 70px auto 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px -2px rgba(0,0,0,0.26);
+  }
+  .profile-pic {
+    display: false;
+    position: absolute;
+    margin: false;
+    top: -90px;
+    left: 50%;
+    right: false;
+    bottom: false;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 180px;
+    width: 180px;
+    border: 10px solid #fff;
+    border-radius: 100%;
+    /* background: url("https://pbs.twimg.com/media/CdbiubzVIAANj8J.jpg") center no-repeat; */
+    background-size: cover;
+  }
+  .profile-name-container {
+    margin: 0 auto 10px;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .user-name {
+    font-family: "Montserrat";
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+  .user-desc {
+    letter-spacing: 1px;
+    color: #999;
+    width: calc(100% - 80px);
+    word-wrap:break-word;
+    /* padding: 0px 10px; */
+  }
+  .profile-card-stats {
+    height: 75px;
+    padding: 10px 0px;
+    text-align: center;
+    /* overflow: hidden; */
+    margin: 0px;
+  }
+  .profile-stat {
+    height: 100%;
+    width: 150px;
+    margin: 1px;
+  }
+  .profile-stat:after {
+    color: #999;
+  }
+  .works::after {
+    content: "posts";
+  }
+  .followers::after {
+    content: "followers";
+  }
+  .following::after {
+    content: "following";
+  }
+  .image {
+    width: 240px;
+    height: 200px;
+    cursor: pointer;
+    margin: 0 20px 40px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 10px solid #fff;
+    box-shadow: 0 2px 6px -2px rgba(0,0,0,0.26);
+    background-color: rgba(0,0,0,0.4);
+    background-size: cover !important;
+    -webkit-transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
+    transition: 0.2s cubic-bezier(0.5, 0, 0.2, 1);
+  }
+  .image:hover {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+    box-shadow: 0 2px 18px -2px rgba(0,0,0,0.3);
+  }
+  .image.hidden {
+    height: 0;
+    width: 0px;
+    margin: 0px;
+    border: 0px solid #fff;
+  }
+  .button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: 900;
+    line-height: 20px;
+    min-width: 200px;
+    padding: 20px 40px;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    margin: 0 20px;
+  }
+  .button:hover {
+    color: #2ebaae;
+    border: 1px solid #2ebaae;
+  }
+  .button.inactive {
+    color: #bbb;
+    cursor: default;
+  }
+  .button.inactive:hover {
+    color: #bbb;
+    border: 1px solid #bbb;
+  }
+ .upload_photo{
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flexed-end;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .containerp {
+      max-width: 562px;
+    }
+    .post-image {
+      width: 396px;
+      height: 330px;
+      border: 0px solid #fff;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+      background-size: contain !important;
+    }
+    
+  }
+  @media screen and (max-width: 630px) {
+    .image {
+      width: calc(100% - 40px);
+      height: 0px;
+      padding-bottom: 60%;
+    }
+    
+  }
+  @media screen and (max-width: 550px) {
+    .post-image {
+      width: 80%;
+      max-width: 288px;
+      height: 240px;
+    }
+    .profile-card-stats {
+      height: 0;
+      padding: 0px;
+    }
+    .profile-pic {
+      height: 140px;
+      width: 140px;
+      top: -70px;
+    }
+    .profile-card {
+      padding-top: 70px;
+      margin: 50px auto 30px;
+    }
+  }
+  
